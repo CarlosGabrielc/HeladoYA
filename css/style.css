@@ -1,0 +1,77 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(fondo-helados.jpg);
+    text-align: center;
+    margin: 0%;
+    padding: 0;
+}
+
+.productos {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    background-color: rgb(42, 51, 179);
+}
+
+.bloque{
+    margin-bottom: 30px;
+
+}
+
+.kilos, .gustos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  center;
+    gap: 10px;
+}
+
+.peso, .gustos button{
+    background: rgb(247, 149, 195);
+    border:  2px solid #66669c;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.peso:hover, .gustos button:hover{
+    background: #ffade1;
+    color: rgb(55, 0, 255);
+}
+
+.pedido button{
+    background: blue;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.2 ease-in-out;
+}
+
+.pedido button:hover{
+    background: #ffade1;
+    color: aliceblue;
+}
+span{
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+
+}
+
+@media (max-width: 480px) {
+    .kilos button, .gustos button{
+        flex: 1 1 40%;
+    }
+}
+
+.login{
+    text-align: center;
+}
