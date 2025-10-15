@@ -1,0 +1,215 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  background-image: url(fondo-helados.jpg);
+  font-family: Arial, sans-serif;
+}
+
+
+ .container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
+
+
+.boton-izquierda,
+.boton-derecha {
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.boton-izquierda {
+  left: 20px;
+}
+
+.boton-derecha {
+  right: 20px;
+}
+
+
+.formulario {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+form button {
+  padding: 10px;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background: #27ae60;
+}
+.texto-azul {
+  margin-top: 10px;
+  color: #3498db;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.texto-azul:hover {
+  color: #217dbb;
+} */
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(fondo-helados.jpg);
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor general */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Carrusel: imágenes alineadas horizontalmente */
+.carrusel {
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+  flex-wrap:nowrap; /* se adapta en pantallas pequeñas */
+}
+
+.carrusel img {
+  width: 240px; /* ajusta según necesites */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Contenedor de los botones */
+.botones-container {
+  display: flex;
+  justify-content: center; /* centra los botones horizontalmente */
+  gap: 72%; /* espacio entre los botones */
+  margin-top: 20px; /* espacio respecto a lo que esté arriba */
+}
+
+/* Estilos generales para los botones */
+.boton-izquierda, .boton-derecha {
+  padding: 10px 20px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Estilo específico para cada botón (opcional) */
+.boton-izquierda {
+  background-color: #4d94ff;
+  color: white;
+}
+
+.boton-derecha {
+  background-color: #4d94ff;
+  color: white;
+}
+
+/* Efecto hover */
+.boton-izquierda:hover {
+  background-color: #1a75ff;
+  transform: translateY(-2px);
+}
+
+.boton-derecha:hover {
+  background-color: #1a75ff;
+  transform: translateY(-2px);
+}
+
+
+/* Formulario */
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+form button {
+  padding: 10px;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background: #27ae60;
+}
+
+.texto-azul {
+  margin-top: 10px;
+  color: #3498db;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.texto-azul:hover {
+  color: #217dbb;
+}
